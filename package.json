@@ -18,6 +18,7 @@
     "onStartupFinished"
   ],
   "scripts": {
+    "test": "docker compose --progress plain up --build",
     "test:e2e": "node runner.mjs"
   },
   "devDependencies": {
