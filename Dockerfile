@@ -10,8 +10,6 @@ RUN apt-get update && \
     chromium \
     xvfb
 
-# Package contents should change less frequently than the source code, so copy
-# and install them in earlier layer
 COPY package.json package-lock.json ./
 RUN npm ci
 
