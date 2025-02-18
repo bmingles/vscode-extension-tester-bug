@@ -1,0 +1,10 @@
+### Ignore everything ####
+**/*
+
+#### Explicitly add things back ####
+
+!LICENSE
+!package.json
+!README.md
+!lib/**/*.js
+!node_modules

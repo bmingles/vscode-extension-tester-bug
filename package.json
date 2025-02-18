@@ -1,0 +1,27 @@
+{
+  "name": "vscode-ext-tester-error",
+  "version": "1.0.0",
+  "private": true,
+  "decription": "",
+  "main": "lib/extension.js",
+  "keywords": [],
+  "author": "Brian Ingles <brianingles@illumon.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bmingles/vscode-extension-tester-bug"
+  },
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "scripts": {
+    "test:e2e": "node runner.mjs"
+  },
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "vscode-extension-tester": "^8.12.0"
+  }
+}
