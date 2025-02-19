@@ -5,9 +5,14 @@ RUN node --version
 
 RUN apt-get update && \
     apt-get install -y \
-    # Even though Chromium is downloaded dynamically by vscode-extension-tester,
-    # we explicitly install so that lib dependencies are automatically installed.
-    chromium \
+    libnss3 \
+    libdbus-1-3 \
+    libatk1.0-0 \
+    libatk-bridge2.0-0 \
+    libgtk-3-0 \
+    libgbm1 \
+    libasound2 \
+    libxcomposite1 \
     xvfb
 
 COPY package.json package-lock.json ./
